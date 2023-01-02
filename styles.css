@@ -46,9 +46,10 @@ body,html{
     grid-area: header;
     background-color: #f0f9ff;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: max(450px,60%) max(280px,40%);
     grid-template-rows: 40% 60%;
     align-items: center;
+    grid-gap: 0.1rem;
 }
 
 
@@ -69,34 +70,77 @@ body,html{
 }
 
 .searchbar{
+    padding: 2rem;
     padding-left: 3rem;
+    
 }
 
-.searchBar{
+#searchBar{
     appearance: none;
-    border: transparent;
+    border: 2px transparent;
     border-radius: 1rem;
     padding:0.3rem;
     padding-left: 0.8rem;
-    width: max(350px,60%);
-    background-color: lightgray;
+    width: max(380px,95%);
+    background-color: #9ca3af;
     position:relative;
+    color: white;
+    
 }
 
-input.searchBar::before{
+#searchBar:focus{
+    outline: none;
+    border: 2px solid #0ea5e9;
+    margin: -1px;
+    box-shadow: 1px 1px lightgray;
+}
+
+#search-wrapper{
+    position: relative;
+}
+
+#search-wrapper::before{
     content: url("icons/magnify.svg");
     position: absolute;
+    top: 0.3em;
     width: 1.2em;
     left: -1.5em;
 }
 
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4rem;
+    
+    
+    
+}
+
+#profilepic{
+    border-radius: 50%;
+    background-color: orange;
+    height:2rem;
+    margin-right: 1rem;
+    
+}
 
 .main-content{
     grid-area: main-content;
-    background-color: #e0fefe;
+    background-color: #9ca3af;
+}
+.profilewrapper{
+    position: relative;
 }
 
-
+.profilewrapper::before{
+    content: url("icons/bell-outline.svg");
+    position: absolute;
+    width: 1.5rem;
+    left: -3rem;
+    top: -0.8rem;
+    
+}
 
 
 /* Sidebar CSS */
