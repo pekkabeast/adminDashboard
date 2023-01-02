@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="searchbar">
+                <input type="text" class="searchBar" placeholder="Search for something">
+            </div>
+            <div class="profile">Shiro Chan</div>
+            <div class="greeting">Hi there, Shiro Chan (@shiro)</div>
+            <div class="actions">
+                <ul>
+                    <li><button class="actionBtns">New</button></li>
+                    <li><button class="actionBtns">Upload</button></li>
+                    <li><button class="actionBtns">Share</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h1 class="logo">Catboard</h1>
+            <ul class="profileLinks">
+                <li id="home">Home</li>
+                <li id="profile">Profile</li>
+                <li id="messages">Messages</li>
+                <li id="history">History</li>
+                <li id="tasks">Tasks</li>
+                <li id="communities">Communities</li>
+            </ul>
+            <ul class="settingLinks">
+                <li id="settings">Settings</li>
+                <li id="support">Support</li>
+                <li id="privacy">Privacy</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="projects"></div>
+            <div class="announcements"></div>
+            <div class="trending"></div>
+        </div>
+    </div>
+
 </body>
+
 </html>
