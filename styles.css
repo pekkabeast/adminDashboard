@@ -41,6 +41,7 @@ body,html{
     list-style: none;
 }
 
+/* header CSS */
 .header{
     grid-area: header;
     background-color: #f0f9ff;
@@ -67,6 +68,28 @@ body,html{
     color: white;
 }
 
+.searchbar{
+    padding-left: 3rem;
+}
+
+.searchBar{
+    appearance: none;
+    border: transparent;
+    border-radius: 1rem;
+    padding:0.3rem;
+    padding-left: 0.8rem;
+    width: max(350px,60%);
+    background-color: lightgray;
+    position:relative;
+}
+
+input.searchBar::before{
+    content: url("icons/magnify.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+}
+
 
 .main-content{
     grid-area: main-content;
@@ -74,6 +97,9 @@ body,html{
 }
 
 
+
+
+/* Sidebar CSS */
 .logo{
     position: relative;
 
@@ -114,6 +140,62 @@ body,html{
 
 #profile::before{
     content: url("icons/card-account-details-outline.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+}
+
+#messages::before{
+    content: url("icons/message.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+}
+
+#history::before{
+    content: url("icons/clock-outline.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+
+}
+
+#tasks::before{
+    content: url("icons/list-box-outline.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+
+}
+
+#communities::before{
+    content: url("icons/account-group.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+}
+
+.settingLinks li{
+    position: relative;
+}
+
+
+#settings::before{
+    content: url("icons/cog.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+}
+
+#support::before{
+    content: url("icons/face-agent.svg");
+    position: absolute;
+    width: 1.2em;
+    left: -1.5em;
+}
+
+#privacy::before{
+    content: url("icons/shield-lock.svg");
     position: absolute;
     width: 1.2em;
     left: -1.5em;
